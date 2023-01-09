@@ -1,0 +1,389 @@
+:root {
+    --bg-image-s2: "#fff";
+}
+
+.tf-portfolio.no-carousel {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.tf-portfolio.no-carousel.column-1 .item {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.tf-portfolio.no-carousel.column-2 .item {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.tf-portfolio.no-carousel.column-3 .item {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.tf-portfolio.no-carousel.column-4 .item {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.tf-portfolio .portfolios-post .featured-post::after {
+    position: absolute;
+    opacity: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-portfolio .portfolios-post:hover .featured-post::after {
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-portfolio .portfolios-post .content .post-meta::before,
+.tf-portfolio .portfolios-post .content .post-meta,
+.tf-portfolio .portfolios-post .content {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-portfolio .portfolios-post:hover .content {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.portfolios-post .featured-post img {
+    width: 100%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.portfolios-post:hover .featured-post img {
+    transform: scale(1.1);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* Style-2 */
+.tf-portfolio.style2 .portfolios-post {
+    position: relative;
+}
+
+.tf-portfolio.style2 .portfolios-post .featured-post {
+    margin-bottom: 0;
+}
+
+.tf-portfolio.style2 .portfolios-post .featured-post::after {
+    position: absolute;
+    opacity: 1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-portfolio.style2 .portfolios-post .content {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: transparent;
+}
+
+.tf-portfolio.style2 .portfolios-post .content .title {
+    transform: translateY(-3px);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-portfolio.style2 .portfolios-post:hover .content .title {
+    transform: translateY(0);
+}
+
+/* Style 3 */
+.tf-portfolio.style3 .portfolios-post {
+    position: relative;
+}
+
+.tf-portfolio.style3 .portfolios-post .content {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: -50px;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.tf-portfolio.style3 .portfolios-post:hover .content {
+    bottom: 0;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.tf-portfolio.style3 .portfolios-post .content .count {
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    z-index: 0;
+}
+
+.tf-portfolio.style3 .portfolios-post .content .title.yes {
+    position: relative;
+    z-index: 2;
+}
+
+.tf-portfolio.style3 .portfolios-post .content .title.yes::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -57px;
+}
+
+.tf-portfolio.style3 .portfolios-post .content .title.yes::after {
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-portfolio.style3 .portfolios-post .content .title.yes:hover::after{
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-portfolio.style3 .portfolios-post .content .title:hover {
+    padding-left: 5px;
+}
+
+.tf-portfolio.style3 .portfolios-post .content .title {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tf-portfolio.style3 .portfolios-post .content .post-meta {
+    transform: translateY(20px);
+    opacity: 0;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+
+.tf-portfolio.style3 .portfolios-post:hover .content .post-meta {
+    transform: translateY(0px);
+    opacity: 1;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+
+.portfolios-post:hover {
+    cursor: default;
+}
+
+.tf-portfolio.style3 .owl-carousel .owl-dot {
+    position: relative;
+    overflow: unset;
+}
+
+.tf-portfolio.style3 .owl-dots .owl-dot {
+    margin: 0 10px;
+}
+
+.tf-portfolio.style3 .owl-dots .owl-dot::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.tf-portfolio.style3 .owl-dots .owl-dot.active::after {
+    border: 1px solid var(--theme-secondary-color);
+}
+
+
+
+/* Carousel  */
+.tf-portfolio.has-carousel .owl-nav .owl-prev,
+.tf-portfolio.has-carousel .owl-nav .owl-next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tf-portfolio.has-carousel .owl-nav {
+    position: absolute;
+}
+
+.tf-portfolio .owl-carousel .owl-nav .owl-next,
+.tf-portfolio .owl-carousel .owl-nav .owl-prev {
+    border: 3px solid #e8e8e9;
+}
+
+.tf-portfolio.has-carousel .owl-nav .owl-next {
+    left: unset;
+    right: 0;
+}
+
+.tf-portfolio.has-carousel .owl-nav .owl-prev:before,
+.tf-portfolio.has-carousel .owl-nav .owl-next:before,
+.tf-portfolio.has-carousel .owl-dots .owl-dot:before {
+    display: none;
+}
+
+.tf-portfolio.has-carousel .owl-nav .owl-prev.disabled,
+.tf-portfolio.has-carousel .owl-nav .owl-next.disabled {
+    display: none !important;
+}
+
+.tf-portfolio.has-carousel.no-arrow .owl-nav .owl-prev,
+.tf-portfolio.has-carousel.no-arrow .owl-nav .owl-next {
+    display: none;
+}
+
+.tf-portfolio.has-carousel.has-arrow .owl-nav .owl-prev,
+.tf-portfolio.has-carousel.has-arrow .owl-nav .owl-next {
+    display: block;
+}
+
+.tf-portfolio .owl-dots {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tf-portfolio .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.tf-portfolio.has-carousel.no-bullets .owl-dots {
+    display: none;
+}
+
+.tf-portfolio.has-carousel.has-bullets .owl-dots {
+    display: block;
+}
+
+@media (max-width: 991px) {
+    .tf-portfolio.no-carousel.tablet-column-1 .item {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .tf-portfolio.no-carousel.tablet-column-2 .item {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .tf-portfolio.no-carousel.tablet-column-3 .item {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (max-width: 767px) {
+    .tf-portfolio.no-carousel.mobile-column-1 .item {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .tf-portfolio.no-carousel.mobile-column-2 .item {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}

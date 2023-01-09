@@ -1,0 +1,18 @@
+{
+  	"icons": [
+		"quote-left",
+		"quote-right",
+		"long-arrow-left",
+  		"long-arrow-right",
+  		"admin",
+		"comment",
+		"phone",
+		"search",
+		"analysis",
+		"data",
+		"data-service",
+		"facebook",
+		"linkedin",
+		"twitter"
+  	]
+}

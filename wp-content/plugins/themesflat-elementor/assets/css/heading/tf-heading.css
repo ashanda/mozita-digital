@@ -1,0 +1,11 @@
+/* heading */
+
+.tf-heading a {
+  color: #ff4040;
+  cursor: default;
+  font-weight: 400;
+}
+
+.tf-heading span {
+  color: #77706d;
+}

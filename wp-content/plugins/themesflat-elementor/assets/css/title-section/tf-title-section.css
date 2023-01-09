@@ -1,0 +1,56 @@
+/*title section
+---------------------------------------------------------------- */
+.tf-title-section .title-section .blurred-text {
+    color: transparent;
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(31,36,44,0.07);
+    white-space: nowrap;
+}
+
+
+.tf-title-section .sub-title p {
+    margin: 0;
+}
+
+.tf-title-section .title-section .blurred-text {
+    /*background: linear-gradient(90deg, #000, #fff, #000);*/
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    animation: shine 5s linear infinite;
+    position: relative;
+}
+
+.tf-title-section .title-section .heading,
+.tf-title-section .title-section .sub-title {
+    position: relative;
+    z-index: 1;
+}
+
+.tf-title-section.two-line .title-section .heading,
+.tf-title-section.one-line .title-section .heading {
+    padding: 0 60px;
+    display: inline-block;
+}
+
+.tf-title-section.two-line .title-section .heading::after,
+.tf-title-section.two-line .title-section .heading::before,
+.tf-title-section.one-line .title-section .heading::before {
+    content: '';
+    width: 40px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(0%,-50%);
+}   
+
+.tf-title-section.two-line .title-section .heading::after {
+    left: inherit;
+    right: 0;
+}   
+

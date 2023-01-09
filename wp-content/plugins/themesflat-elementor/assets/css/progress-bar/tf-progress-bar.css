@@ -1,0 +1,68 @@
+.tf-progress-bar {
+  position: relative;
+}
+.tf-progress-bar .title,
+.tf-progress-bar .perc {
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+}
+.tf-progress-bar.inner .perc {
+  position: relative;
+  width: 100% !important;
+}
+.tf-progress-bar .progress-animate {
+  width: 0;
+  height: 100%;
+  -webkit-transition:  width 1.5s ease-in-out, opacity 1.5s ease-in-out;
+  -moz-transition:  width 1.5s ease-in-out, opacity 1.5s ease-in-out;
+  transition:  width 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+.tf-progress-bar .progress-bar {
+  width: 100%;
+  margin-top: 10px;
+}
+.tf-progress-bar .perc {
+  width: 0%;
+  -webkit-transition:  width 1.5s ease-in-out, opacity 1.5s ease-in-out;
+  -moz-transition:  width 1.5s ease-in-out, opacity 1.5s ease-in-out;
+  transition:  width 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+.tf-progress-bar .number-perc {
+  position: relative;
+  z-index: 5;
+  margin-top: 5px;
+  margin-right: -19px;
+  -webkit-transition:  width 1.5s ease-in-out, opacity 1.5s ease-in-out;
+  -moz-transition:  width 1.5s ease-in-out, opacity 1.5s ease-in-out;
+  transition:  width 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+.tf-progress-bar .number-perc::before {
+  content: "";
+  width: 36px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: #ff4040;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.tf-progress-bar .number-perc:after {
+  content: "";
+  position: absolute;
+  top: calc(50% + 13px);
+  left: calc(50% - 7px);
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #ff4040;
+  z-index: -1;
+}

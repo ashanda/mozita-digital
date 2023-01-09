@@ -1,0 +1,90 @@
+
+---Downloaded files---
+The import files for: Import Demo Data were successfully downloaded!
+Initial max execution time = 300
+Files info:
+Site URL = https://htweb.vn/testwp
+Data file = /home/htweb/domains/htweb.vn/public_html/testwp/wp-content/uploads/2022/05/demo-content-import-file_2022-05-14__03-47-24.xml
+Widget file = /home/htweb/domains/htweb.vn/public_html/testwp/wp-content/uploads/2022/05/demo-widgets-import-file_2022-05-14__03-47-24.json
+Customizer file = /home/htweb/domains/htweb.vn/public_html/testwp/wp-content/uploads/2022/05/demo-customizer-import-file_2022-05-14__03-47-24.dat
+Redux files:
+not defined!
+
+---ocdi/before_content_import---
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Sidebar Blog : 
+
+Block - No Title - Imported
+Block - No Title - Imported
+Block - No Title - Imported
+Block - No Title - Imported
+
+Footer Widget Area 1 : 
+
+Block - No Title - Imported
+
+Footer Widget Area 2 : 
+
+Navigation Menu - Explore Links - Imported
+
+Footer Widget Area 3 : 
+
+Navigation Menu - No Title - Imported
+
+Footer Widget Area 4 : 
+
+Block - No Title - Imported
+
+Sidebar Toggler : 
+
+Block - No Title - Imported
+Block - No Title - Imported
+
+Services Sidebar : 
+
+Block - No Title - Imported
+Themesflat - Services Categories - Services List - Imported
+
+Portfolio Sidebar : 
+
+Block - No Title - Imported
+Themesflat - Portfolio Categories - Categories - Imported
+Themesflat - Recent Blogs Portfolios - Recent Posts - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+
